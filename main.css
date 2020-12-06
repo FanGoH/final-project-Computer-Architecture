@@ -1,0 +1,23 @@
+div.register-container {
+	border: 2px black solid;
+}
+
+div.register-container > h4 {
+}
+
+div.register-container > div.register-memory-container {
+	display: flex;
+	flex-direction: column;
+}
+
+div.register-container div.memory-address {
+	display: flex;
+}
+
+div.register-container div.bit-container {
+	border: 2px black solid;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
