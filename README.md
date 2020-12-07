@@ -50,7 +50,7 @@ The CPU works with the following memory/registers:
 * RAM - To store values.
 * MDR - To store the output from the memories.
 * MIR - To store the operation to perform on the ALU.
-* ACCUMULATOR - The register where operations results are done.
+* ACCUMULATOR - The register where operations results are stored.
 
 ### Data format
 
