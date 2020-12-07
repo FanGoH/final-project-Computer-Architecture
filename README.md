@@ -50,7 +50,7 @@ The CPU works with the following memory/registers:
 * RAM - To store values.
 * MDR - To store the output from the memories.
 * MIR - To store the operation to perform on the ALU.
-* ACCUMULATOR - The register where operations results are done.
+* ACCUMULATOR - The register where operations results are stored.
 
 ### Data format
 
@@ -58,7 +58,7 @@ We followed the *Big Endian* format consistenly, registers other than the ROM on
 
 On ROM, there are 8 bits, the first 4 are for the OPCODE of the instruction, meanwhile the other 4 represent a value or an address, depending on the OPCODE
 
-### Timming issues and Performance
+### Timing issues and Performance
 
 Keeping everything synchronized was a priority for the emulator to work, but thanks to clever code architecture, we were able to make an event-based code, not allowing things to work out of the order they were supposed to.
 
