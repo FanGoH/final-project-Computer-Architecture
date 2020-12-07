@@ -1,20 +1,3 @@
-let delay = 500; //document.getElementById("")
-
-/*
-BIT OUTPUT:
-1: mdr r/w
-2: mdr mux
-3: ram r/w
-4: rom en
-5: mar en
-6: mar mux
-7: pc en
-8: alu mux
-9: alu en
-10: acc mux
-11: mir en
-*/
-
 // components: mdr, ram, rom, mar, pc, alu, acc, mir
 const getClock = (components) => {
 	const controlUnit = getControlUnit();
@@ -51,3 +34,5 @@ const getClock = (components) => {
 		tick: tick,
 	};
 };
+
+const clock = getClock({ mdr, ram, rom, mar, pc, alu, acc, mir });

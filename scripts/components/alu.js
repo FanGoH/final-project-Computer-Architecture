@@ -23,3 +23,5 @@ const getALU = () => {
 		calculate,
 	};
 };
+
+const alu = getALU();
