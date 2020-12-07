@@ -5,29 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
-    <title>CPU Chidisima con Vanilla</title>
+    <title> Custom CPU Emulator  </title>
 </head>
 
 <body>
 
 
 
-    <div id="alu" class="noc">
-        <h4>ALU</h4>
-        <div></div>
-    </div>
-    <div id="control unit">
-        <h4>Control Unit</h4>
-    </div>
+    <div id="board" class="big-parent-container">
 
-    </div>
+        <div class="control-panel">
+            <h4> Control Panel </h4>
+            <button id="clockControl" class="clock-control"> Start clock
+            </button>
+            <p> Set Frequency of CPU Clock (Higher is faster) </p>
+            <input class="clock-hz" type="text" value="2.4" />
+
+            <div class="InstructionsQueue">
+                <h4>Insert Your Instructions Here</4>
+
+                <textarea id="instructionInput" cols="30" rows="8"
+                    placeholder="Add #7"></textarea>
+                <button id="submitInstructions"> Load Instructions </button>
+            </div>
+
+        </div>
+
+        <div class="instructions">
+            <h4> README </h4>
+            <P> The CPU receives the following instructions </P>
+            <ul>
+                <li class="instructionItems"><pre>ADD#: 0 0 0 0
+                </pre></li>
+                <li class="instructionItems"><pre>SUB#: 0 0 0 1
+                </pre></li>
+                <li class="instructionItems"><pre>AND#: 0 0 1 0
+                </pre></li>
+                <li class="instructionItems"><pre>OR#:  0 0 1 1
+                </pre></li>
+                <li class="instructionItems"><pre>LDA#: 0 1 0 0
+                </pre></li>
+                <li class="instructionItems"><pre>MVA:  0 1 0 1
+                </pre></li>
+                <li class="instructionItems"><pre>MVR:  0 1 1 0
+                </pre></li>
+                <li class="instructionItems"><pre>ADD:  1 0 0 0
+                </pre></li>
+                <li class="instructionItems"><pre>SUB:  1 0 0 1
+                </pre></li>
+                <li class="instructionItems"><pre>AND:  1 0 1 0
+                </pre></li>
+                <li class="instructionItems"><pre>OR:   1 0 1 1
+                </pre></li>
+                <li class="instructionItems"><pre>NOP:  1 1 1 1
+                </pre></li>
+            </ul>
+        </div>
+   
 
 
-    <script src="utils.js"></script>
-    <script src="controlUnit.js"></script>
-    <script src="clock.js"></script>
-    <script src="alu.js"></script>
-    <script src="index.js"></script>
+        <script src="scripts/utils.js"></script>
+        <script src="scripts/controlUnit.js"></script>
+        <script src="scripts/clock.js"></script>
+        <script src="scripts/alu.js"></script>
+        <script src="scripts/InstructionsQueue.js"></script>
+        <script src="scripts/index.js"></script>
 </body>
 
 </html>
