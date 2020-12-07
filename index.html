@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
-    <title> Custom CPU Emulator  </title>
+    <title> Custom CPU Emulator </title>
 </head>
 
 <body>
@@ -22,9 +22,9 @@
             <div class="InstructionsQueue">
                 <h4>Insert Your Instructions Here</4>
 
-                <textarea id="instructionInput" cols="30" rows="8"
-                    placeholder="Add #7"></textarea>
-                <button id="submitInstructions"> Load Instructions </button>
+                    <textarea id="instructionInput" cols="30" rows="8"
+                        placeholder="Add #7"></textarea>
+                    <button id="submitInstructions"> Load Instructions </button>
             </div>
 
         </div>
@@ -32,7 +32,63 @@
         <div class="instructions">
             <h4> README </h4>
             <P> The CPU receives the following instructions </P>
-            <ul>
+
+            <table>
+                <tr>
+                    <td>Mnemonic and example </td>
+                    <td>OPCODE</td>
+                </tr>
+                <tr>
+                    <td>ADD #7</td>
+                    <td> 0 0 0 0</td>
+                </tr>
+                <tr>
+                    <td>SUB #7</td>
+                    <td> 0 0 0 1</td>
+                </tr>
+                <tr>
+                    <td>AND #7</td>
+                    <td> 0 0 1 0</td>
+                </tr>
+                <tr>
+                    <td> OR #7</td>
+                    <td> 0 0 1 1</td>
+                </tr>
+                <tr>
+                    <td> LDA #7</td>
+                    <td> 0 1 0 0 </td>
+                </tr>
+                <tr>
+                    <td> MVA 7 </td>
+                    <td> 0 1 0 1 </td>
+                </tr>
+                <tr>
+                    <td> MVR 7 </td>
+                    <td> 0 1 1 0</td>
+                </tr>
+                <tr>
+                    <td> ADD 7</td>
+                    <td> 1 0 0 0</td>
+                </tr>
+                <tr>
+                    <td>SUB 7</td>
+                    <td>1 0 0 1</td>
+                </tr>
+                <tr>
+                    <td>AND 7</td>
+                    <td>1 0 1 0</td>
+                </tr>
+                <tr>
+                    <td>OR 7</td>
+                    <td> 1 0 1 1</td>
+                </tr>
+                <tr>
+                    <td>NOP</td>
+                    <td>1 1 1 1</td>
+                </tr>
+            </table>
+
+            <!-- <ul>
                 <li class="instructionItems"><pre>ADD#: 0 0 0 0
                 </pre></li>
                 <li class="instructionItems"><pre>SUB#: 0 0 0 1
@@ -56,10 +112,13 @@
                 <li class="instructionItems"><pre>OR:   1 0 1 1
                 </pre></li>
                 <li class="instructionItems"><pre>NOP:  1 1 1 1
-                </pre></li>
-            </ul>
+                </pre></li> 
+            </ul>-->
+            <p> Check a detailed readme <a
+                    href="https://github.com/FanGoH/final-project-Computer-Architecture">here</a>
+            </p>
         </div>
-   
+
 
 
         <script src="scripts/utils.js"></script>

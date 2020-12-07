@@ -56,21 +56,6 @@ const formatData = (dataStr) => {
 	return getRawStr(dataStr);
 };
 
-///MVA #5  => Mov A -> Addr
-//MVR      => Mov Addr -> A
-// E
-// MOV A, #5
-// MOV 0x3, #6
-// MOV 0x1, 0x3 ??????
-// MOV A, 3
-
-// MOV 1, 3
-
-// MVA 3
-// MVR 1
-
-//MVA
-
 const DATA_BIT_WIDTH = 4;
 const getOpCode = (instruction) => {
 	let [opName, data] = instruction.split(" ");

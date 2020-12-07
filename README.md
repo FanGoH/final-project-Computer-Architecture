@@ -40,6 +40,8 @@ Currently, the CPU supports the following instructions:
 * OR:   1 0 1 1 - Logical OR direct mode
 * NOP:  1 1 1 1 - No operation
 
+![instruction-set](instructionSet.png)
+
 ### The virtual Memory, Registers
 
 The CPU works with the following memory/registers:
@@ -62,4 +64,4 @@ On ROM, there are 8 bits, the first 4 are for the OPCODE of the instruction, mea
 
 Keeping everything synchronized was a priority for the emulator to work, but thanks to clever code architecture, we were able to make an event-based code, not allowing things to work out of the order they were supposed to.
 
-Performance-wise, the emulator can do the provided operations almost inmediately, the delay is meant to allow users to see the execution cycle. 
+Performance-wise, the emulator can do the provided operations almost inmediately, the delay is meant to allow users to see the execution cycle.
