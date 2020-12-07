@@ -58,6 +58,8 @@ const formatData = (dataStr) => {
 
 const DATA_BIT_WIDTH = 4;
 const getOpCode = (instruction) => {
+	if (instruction.toUpperCase().includes("NOP"))
+		return [1, 1, 1, 1, 0, 0, 0, 0];
 	let [opName, data] = instruction.split(" ");
 	opName = opName.toUpperCase();
 	data = formatData(data);
